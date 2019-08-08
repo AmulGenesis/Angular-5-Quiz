@@ -1,0 +1,13 @@
+<div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-1">
+                    <form #addPostForm="ngForm" (submit)="editPosts(addPostForm)">
+                        <label>Title</label>
+                        <input type="text" [(ngModel)]="postModel.title" id="title" name="title">
+                        <label>Body</label>
+                        <input type="text" [(ngModel)]="postModel.body" id="body" name="body">
+                        <!-- <button type="submit">Edit Post</button> -->
+                    </form>
+            </div>
+        </div>
+</div>
